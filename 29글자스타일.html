@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>29글자스타일.html</title>
+    <style>
+        body{
+            font-family: 궁서, sans-serif;
+            font-size: large;
+            /*xx-small x-small small medium large x-large, xx-large */
+            /*글자단위 : px pt em rm*/
+            font-style: oblique; /*normal, italic*/
+            font-weight: lighter;
+            /*100~900, bold, bolder, lighter*/
+            color:navy;
+            /* text-align:center; */
+        }
+        #a1{
+            text-transform:capitalize; /*앞글자만 대문자*/
+        }
+        #a2{
+            text-transform:uppercase;
+        }
+        #a3{
+            text-transform:lowercase;
+        }
+    </style>
+</head>
+<body>
+    <h1>글자 또는 텍스트 스타일</h1>
+    <h2>기본</h2>
+    <h2 Style="text-decoration:overline;">윗줄</h2>
+    <h2 style="text-decoration:underline;">밑줄</h2>
+    <h2 style="text-decoration:line-through">취소선</h2>
+    일반 텍스트
+    <hr>
+    <h1 style="color:teal;text-shadow:4px 2px 7px orange;">안녕 CSS - TEXT Shadow</h1>
+                                    <!--x좌표 y좌표 번짐크기 색상 -->
+    <table border="1" style="width:80%;height:400px;margin:auto;">
+        <tr>
+            <td width="50%" style="vertical-align:top">수직정렬</td>
+            <!-- vertical-align:bottom  밑으로-->
+            <td style="text-align:right;">수평정렬</td>
+            <!-- text-align(수평정렬) : left right center -->
+
+        </tr>
+        <tr>
+            <td>
+                <div id="a1">abc(첫글자를 대문자로)</div>
+                <div id="a2">abd(모두대문자로)</div>
+                <div id="a3">abcDEF(모두 소문자로)</div>
+            </td>
+            <td>
+                문자간격<br>
+                <span style="color:brown; letter-spacing:10px;">문자간격</span><br>
+                <span style="color:rgb(0, 139, 86); word-spacing:20px;">단어 간격</span>
+            </td>
+        </tr>
+    </table>
+    <br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>

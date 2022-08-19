@@ -1,0 +1,73 @@
+<!-- 09테이블.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>09테이블.html</title>
+</head>
+<body>
+    <h1>테이블 태그 (3행2열)</h1>
+    <!-- tr : 행태그 tablerow
+         td : 열태그 atbledata -->
+    
+    <table border="2" bordercolor="navy" 
+    bgcolor="gold" cellspacing="30"
+    cellpadding="20" align="center"
+    background="images/awdawd.PNG"
+    width="400px" height="300px" style="color:blueviolet">
+        <!-- border는 쓰진 않는데 사용가능하다 줄 두깨 표시 -->
+        <tr>
+            <td>1행1열</td>
+            <td>1행2열</td>
+        </tr>
+        <tr>
+            <td>2행1열</td>
+            <td>2행2열</td>
+        </tr>
+        <tr>
+            <td>3행1열</td>
+            <td>3행2열</td>
+        </tr>
+    </table>
+    <hr>
+    <!-- 3행 4열 -->
+    <table border="1" width="80%" height="200" align="center">
+        <thead>
+            <tr bgcolor="#3289af"> 
+                <!-- #red00/green00/blue00 = #000000 -->
+                <th width="10%">번호</th>
+                <th width="20%">이름</th>
+                <th width="20%">연락처</th>
+                <th width="50%">주소</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td bgcolor="hotpink" style="color:aqua">홍길동</td>
+                <td>010-1111-1222</td>
+                <td>부산시 남구</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td background="images/icon1.PNG" style="color:brown">임철수</td>
+                <td>010-1111-2511</td>
+                <td>부산시 동구</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>고둘리</td>
+                <td>010-1545-1222</td>
+                <td>부산시 중구가시키드나</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <caption>회원 주소록</caption>
+        </tfoot>
+    </table>
+
+</body>
+</html>

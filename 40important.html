@@ -1,0 +1,24 @@
+<!-- 40important.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>40important.html</title>
+    <style>
+        /*구체적일수록 우선순위가 높다*/
+        p{color: red !important;} /*id선택자가 우선순위가 높더라도 !important를 사용하면 우선순위가 올라감*/
+        #thing{color: blue;}
+        div.food{color:chocolate}
+        .food{color:blue}
+        div{
+            color: red
+        }
+    </style>
+</head>
+<body>
+    <p id="thing">will be red</p>
+    <div class="food">Will be Chocolate</di >
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!-- 27가상클래스선택자.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>27가상클래스선택자.html</title>
+    <style>
+        label{
+            width:30%;
+            background-color:yellow;
+            display:inline-block;
+        }
+        /*유효하지 않는 데이터가 입력될 경우*/
+        input[type=text]:invalid{
+            background-color: rgba(255, 0, 0, 0.3);
+        }
+        /*유효한 값이 입력될 경우*/
+        input[type=text]:valid{
+            background-color: beige;
+        }
+        /* input요소 중 text타입이 아닌 요소를 선택해서
+            테두리 2px dotted green으로 주세요
+         */
+        input:not(input[type=text]){
+            border: 2px dotted green;
+        }
+    </style>
+</head>
+<body>
+    <form action="join" method="post">
+        <label for=""> 반드시 값을 입력해야해요</label>
+            <input type="text" required>
+        
+        <br>
+        <label for=""> 특수문자를 포함하지 않는 4자리 문자 또는 숫자</label>
+            <input type="text" required pattern="[a-zA-Z0-9]{4}">
+        
+        <br>
+        <label for="">비밀번호 입력</label>
+            <input type="password" required>
+        
+        <br>
+        <button>회원가입</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,17 @@
+@charset "UTF-8";
+/* 19style.css */
+body{
+    color:navy;
+    font-size: 1.2em;
+    /*상대적 단위 em    1em=16px */
+
+}
+div{
+    font-family: 궁서;
+    color: hotpink;
+    margin: 300px;
+    font-size:70px;
+    background-color: aquamarine;
+    padding:1em;
+
+}

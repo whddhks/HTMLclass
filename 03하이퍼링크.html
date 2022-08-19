@@ -1,0 +1,26 @@
+<!-- 03하이퍼링크.html -->
+<!doctype html>
+<html>
+    <head>
+        <title>03하이퍼링크.html</title>
+    </head>
+    <body>
+        <h1>텍스트에 링크를 걸어봅시다.</h1>
+        <a href="http://www.naver.com">네이버</a>
+        <a href="http://www.google.com">구글</a>
+        <a href="http://www.daum.net" target="_blank">다음</a>
+        <hr color="green">
+        <a href="01HTML시작.html" target="_blank"> 내가만든 문서1</a><br>
+        <a href="02문자열형태.html" target="_blank">내가만든문서2</a><br>
+        <a href="sample/test.html">니가만든문서?</a><br>
+        <!-- 상대경로 방식 : 현재 작성한 파일이 있는 곳을 기준으로 접근하는 방식 
+        c:/WEB/
+            +---03하이퍼링크.html
+            . : 현재 디렉토리를 의미
+            .. : 상위 디렉토리를 의미
+            ../../ : 현재보다 2단계 상위 디렉토리
+        -->
+        <a href="file:///c:/WEB/sample/test.html">니가만든문서2</a><br>
+        <!-- 절대경로 방식 -->
+    </body>
+</html>

@@ -1,0 +1,61 @@
+<!-- 33목록스타일.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>33목록스타일.html</title>
+    <style>
+        /* .menu > li 에 대해 아래와 같이 스타일정의하기
+	   - 폭:120px  높이:25px
+	   - 배경색: lightblue;
+	   - 마진: 3px
+	   - 패딩: 10px
+	   - 글자색: 알아서
+	   - 서체: Helvetica, sans-serif
+	   - 글자크기 : 13px;
+	   - 글자정렬: 중앙에 오도록
+
+	*/
+    .menu>li{
+        list-style-position:inside; /*앞 기호가 안으로 들어간다.*/
+        /* list-style-type: none; */
+        float: left;
+        width: 120px;
+        height: 25px;
+        margin:3px;
+        padding: 10px;
+        color: red;
+        background-color: lightblue;
+        font-family:Helvetica, sans-serif;
+        font-size:13px;
+        text-align: center;        
+    }
+    </style>
+</head>
+<body>
+    <h1>목록 스타일</h1>
+    <ul style="list-style-type:circle; list-style-image:url(images/square.png); ">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JAVA</li>
+        <li>SQL</li>
+    </ul>
+    <HR>
+    <ol style="list-style-type:upper-roman;">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JAVA</li>
+        <li>SQL</li>
+    </ol> 
+    <hr>   
+    <ul class="menu">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JAVA</li>
+        <li>SQL</li>
+    </ul>
+    <hr style="clear:left">
+</body>
+</html>

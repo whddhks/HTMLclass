@@ -1,0 +1,126 @@
+@charset "UTF-8";
+/* 45layout.css */
+*{
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box; /*박스 자이즈를 보더의 크기로 정하겠다는 뜻*/
+}
+body{
+    color: navy;
+    font-family: 'Alumni Sans Inline One', cursive;
+}
+#wrap{
+    width: 90%;
+    /* background-color: bisque; */
+    margin: 0 auto; /* 위 아래는  0 좌우는 auto*/
+    max-width: 1024px;
+    height: auto;
+}
+.clear{
+    clear: both;
+}
+/* header---------------------------- */
+header{
+    border: 1px solid silver;
+    padding : 5px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+header img{
+    width: 98%;
+    text-align: center;
+}
+/* nav------------------------------- */
+nav{
+    padding: 5px;
+    background-color: rgba(225, 232,240, 1);
+    height: 30px;
+    border-radius: 5px;
+
+}
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+nav ul li{
+    float: left;
+    padding: 0 5px 0 0 ;
+
+}
+nav ul li a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 2px 20px 3px 20px;
+    color: rgb(50, 50, 50);
+}
+nav ul li a:hover{
+    background-color:rgb(102, 153, 255);
+    color:rgb(255, 255, 255);
+    border-radius: 5px;
+}
+/*article-----------------------------------*/
+article{
+    height: 500px;
+    border: 1px solid silver;
+    border-radius: 5px;
+    margin: 5px 0;
+    padding: 10px;
+    width: 75%;
+    float:left;
+}
+article section{
+    border: 1px solid lawngreen;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+    width: 47.5%;
+    float: left;
+}
+/*aside ------------------------------------*/
+aside{
+    height: 500px;
+    border: 1px solid silver;
+    border-radius: 5px;
+    margin: 5px 0;
+    padding: 10px;
+    width: 24.8%;
+    float: right;
+}
+aside nav{
+    background: none;
+    border : none;
+}
+aside nav ul{
+    list-style: none;
+}
+aside nav ul li{
+    padding: 0 5px;
+}
+aside nav ul li a{
+    padding: 5px 0;
+    width: 170px;
+}
+aside nav ul li a:hover{
+    background-color: transparent;
+    color: blue;
+    font-weight: bold;
+}
+/*footer----------------------------*/
+
+footer{
+    border-radius: 5px;
+    background-color: rgb(232, 255, 240);
+    border: 1px solid silver;
+    height: 50px;
+    line-height: 30px;
+    font-size : 0.8em;
+    padding: 10px 20px;
+}
+
+
+
+
+
+

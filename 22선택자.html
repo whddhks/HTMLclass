@@ -1,0 +1,82 @@
+<!-- 22선택자.html -->
+<!doctype html>
+<html>
+    <head>
+        <title>22선택자.html</title>
+        <style>
+            div{
+                color:darkslateblue;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 20pt;
+            }
+            /* 클래스 선택자 : 앞에 마침표를 붙인다.
+            .클래스명{속성명 : 값;....}
+            글자색:
+            안쪽여백:1em
+            바깥쪽여백:1.2em
+            배경색:
+            */
+            .c1{
+                color:chocolate;
+                padding :      1em;
+                margin: 1.2em;
+                background-color: chartreuse; 
+            }
+            .c2{
+                border : thick green dashed;
+            }
+            /* id가 div1인 요소를 선택해서
+            배경색
+            글자색
+            글자크기 : 1.5em
+            */
+            #div1{
+                background-color : black;
+                color : white;
+                font-size: 1.5em;
+            }
+            #div2{
+                color:yellow;
+                background-color: black;
+            }
+            /*우선순위 : 아이디>클래스>태그 순*/
+            /* 링크 선택해서 
+            글자스타일 italic
+            글자색
+            */
+            a{
+                font-style: italic;
+                color : blueviolet;
+                background-color: aqua;
+                text-decoration: none;/*밑줄 사라짐*/
+            }
+            /*div 안에 있는 a태그에 대해 배경색 navy
+            글자색 흰색*/
+            div a{
+                background-color: navy;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- id(identity) : 한페이지 내에서 unique한 값을 가져야한다.
+            class: 한 페이지 내에서 동일 이름의 클래스가 여러개 나와도된다.
+            마냑에 클래스가 2개이거나 id class 가 같이 있으면 같이 적용된다 근데 우선순위를 기반하에 
+            id 선택자가 우선순위가 더높아서 덮어 씌움-->
+
+            <h1>Id선택자(selector),class 선택자 , 태그 선택자</h1>
+        <div id="div1">div1 #div1</div>
+        <div id="div2" class="c1">div2 .c1 #div2</div>
+        <div class="c1 c2">div3 .c1 c2</div>
+        <div class="c2">div4.c2</div>
+        <div id="div5">div5 #div5</div>
+        <hr color="tomato">
+        이것은 <a href="http://www.daum.net">단순링크</a>입니다.
+        <br>
+        <div>
+            div 태그안에서 
+            <h2><a href="21인라인스타일정의.html">CSS3.0 예제</a>에 링크를 겁니다.</h2>
+        </div>
+    </body>
+</html>
+

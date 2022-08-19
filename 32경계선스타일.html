@@ -1,0 +1,75 @@
+<!-- 32결게선스타일.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>32결게선스타일.html</title>
+    <style type="text/css">
+        /*  [1] border-style: 테두리 스타일. none(테두리가 있는데 안주겠다.), solid(실선), dashed(긴점선)
+						dotted(짧은 점선), inset(오목선),outset(볼록선),ridge,groove,
+						double(이중선)..
+		    [2] border-width: 테두리 폭. 수치, thick, thin
+		    [3] border-color: 테두리 색상
+		    [4] border-radius: 수치. 모서리를 둥글게 처리
+
+            border:
+
+		borer:
+	*/
+    div.cls{
+        width: 100px;
+        height: 100px;
+        background-color: #cc99ff;
+        padding: 10px;
+        border-style: double;
+        border-width: 13px;
+        border-color: blueviolet;
+        border-radius:50%; /*원이된다.*/
+    }
+    table{
+        width: 200px;
+        height: 200px;
+        text-align: center;
+        margin: 2em;
+    }
+    /*id가 tab1에 대해 
+	테두리 스타일은 inset 두께 thick  색상은 알아서
+	*/
+    #tab1{
+        border-style: outset;
+        border-width: thick;
+        border-color: blue;
+    }
+    #tab2{
+        border-top: 10px ridge green;
+        border-bottom: 10px groove orange;
+        border-left:10px dotted red;
+        border-right: 10px dashed purple;
+        border-radius: 10px 20px 30px 40px;
+        /* 왼쪽위에서 부터 시계방향 */
+    }
+    </style>
+</head>
+<body>
+   <h1>경계선스타일</h1>
+    <div id="" class="cls">
+        div영역
+      </div>
+    
+      <table id='tab1'>
+      <tr>
+        <td>1행1열</td>
+      </tr>
+      </table>
+    
+      <table id='tab2'>
+      <tr>
+        <td>1행1열</td>
+      </tr>
+      </table>
+    
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!-- 39 텍스트 정렬.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>39 텍스트 정렬.html</title>
+    <style>
+        /*id가 mydiv인 요소를 선택해서 텍스트 중앙정렬 하세요. 수직정렬도 middle에 위치하게
+            border: dashed*/
+        div{
+            width: 400px;
+            height: 400px;
+        }
+        #mydiv{
+            text-align: center;
+            /* line-height: 300px; */
+            /*vertical-align : middle;*/
+            /*테이블 태그 내의 샐에서는 적용되나 div에서는 적용 안된다.*/
+            border: 1px dashed darkblue;
+        }
+        #mytab{
+            border: 2px solid tomato;
+            margin-top: 1em;
+            display: table;
+        }
+        #mycell{
+            display: table-cell;
+            text-align: center;
+            vertical-align: middle;
+        }
+        #mytab2{
+            background-color: burlywood;
+            margin-top:1em;
+            border: 3px solid darkgreen;
+            display: none;
+        }
+        #mydiv2{
+            background-color: magenta;
+            visibility: hidden;
+            /*똑같이 안보이지만 영역을 유지하고 있다.*/
+        }
+        #mydiv{
+            opacity: 0 ; /*투명도 0은 투명 1은 아님*/
+        }
+    </style>
+    
+</head>
+<body>
+    <div id="mydiv" class="">
+        가나다라마바사
+    </div>
+    <div id="mydiv2" class="">
+        가나다라마바사
+    </div>
+    <div id="mytab" class="">
+        <div id="mycell">
+            자차카타파하
+        </div>
+    </div>
+    <div id="mytab2" class="">
+        <div id="mycell2">
+            자차카타파하
+        </div>
+    </div>
+    <h1 onclick="show()">안녕하세요</h1>
+    <script>
+        function show(){
+            var obj=document.getElementById('mytab2');
+            //alert(obj)
+            obj.style.display='block';
+            //display none이었건 것이 block 요소로 바뀐다.
+            var obj2=document.getElementById('mydiv2');
+            obj2.style.visibility='visible';
+            var obj3=document.getElementByID('mydiv');
+            obj3.style.opacity='1';
+        }
+    </script>
+</body>
+</html>

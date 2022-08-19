@@ -1,0 +1,31 @@
+<!-- 08이미지맵.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>08이미지맵.html</title>
+</head>
+<body>
+    <h1>이미지맵을 사용해봅시다.</h1>
+    <p>
+        이미지 맵은 이미지의 좌표점에 따라 위치를 지정하여
+        링크를 거는 형식을 사용합니다.
+    </p>
+    <hr color="red">
+    <img src="images/menu.PNG" usemap="#img_map"> 
+    <!-- area태그를 통해서 좌표를 지정한다.
+        - shape : 링크되는 모양을 지정 rect circle poly
+        - coords : 좌표 시작x 시작y 끝x 끝y (사각형)
+                        중심점의 xy좌표 r 반지름 (원)
+                        x1y1 x2y2 x3y3.... (다각형)
+        - href : 이동할 주소 -->
+    <map name="img_map">
+        <area shape="rect" coords="45,14,76,31" href="https://mail.naver.com/">
+        <area shape="circle" coords="102,22,20" href="http://section.cafe.naver.com/ca-fe/">
+        <area shape="poly" coords="149,5,173,17,160,38,140,39,127,18" href="https://section.blog.naver.com/BlogHome.naver?directoryNo=0&currentPage=1&groupId=0">
+        <!-- tap 키를 눌러 모양확인 -->
+    </map>
+</body>
+</html>

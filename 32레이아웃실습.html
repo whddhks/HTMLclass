@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃실습</title>
+    <style>
+        body{
+            margin: auto;
+            width: 90%;
+            max-width: 1024px;
+        }
+        td.image{
+            border: 2px solid gray;
+            border-radius: 10px;
+            background-image: url(images/네이버.PNG);
+            width: 1024px;
+            height: 150px;
+        }
+        div#bar{
+            margin: 1px;
+            border-radius: 10px;
+            width:1030px;
+            height:30px;
+            background-color: rgb(167, 189, 221);
+            
+        }
+        div#bar>*{
+            font-family: sans-serif;
+            color:gray;
+            padding: 20px;
+        }
+        div#board{
+            border: 2px solid skyblue;
+            border-radius: 10px;
+            width: 800px;
+            height: 600px;
+            float:left;
+        }
+        div#board>*{
+            font-weight: bold;
+            color : rgb(70, 44, 216);
+            padding : 10px;
+            margin: 8px;
+            border: 1px solid gray;
+            border-radius: 10px;
+            width: 360px;
+            height : 120px;
+            float: left;
+
+        }
+    
+        div#board>*>*{
+            font-weight:lighter;
+            margin: 6px;
+        }
+        div#menu{
+            border : 2px solid skyblue;
+            margin-left: 805px;
+            width: 220px;
+            height: 600px;
+            border-radius:10px;
+           
+            
+        }
+        div#menu>*{
+            color: gray;
+            padding : 10px;
+        }
+        div#copyright{
+            color:rgb(80, 78, 78);
+            background-color: rgb(158, 157, 157);
+            border-radius: 10px;
+            width: 1030px;
+            height : 60px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td class="image"></td>
+        </tr>
+    </table>
+    
+    <div id="bar">
+        <span>HOME</span>
+        <span>Signup</span>
+        <span>Signin</span>
+        <span>board</span>
+        <span>NEWS</span>
+        <span>Shopping</span>
+    </div>
+
+    <div id="board">
+        <div id="politics">정치 <br>
+           <span>이러쿵 저러쿵......</span><br>
+           <span>이러쿵 저러쿵......</span><br>
+           <span>이러쿵 저러쿵......</span><br>
+           <span>이러쿵 저러쿵......</span>
+        </div>
+        <div id="economy">경제<br>
+            <span>이러쿵 저러쿵......</span><br>
+            <span>이러쿵 저러쿵......</span><br>
+            <span>이러쿵 저러쿵......</span><br>
+            <span>이러쿵 저러쿵......</span>
+        </div>
+        <div id="show">연예<br>
+            <span>이러쿵 저러쿵......</span><br>
+            <span>이러쿵 저러쿵......</span><br>
+            <span>이러쿵 저러쿵......</span><br>
+            <span>이러쿵 저러쿵......</span>
+        </div>
+        <div id="sports">스포츠<br>
+            <span>이러쿵 저러쿵......</span><br>
+            <span>이러쿵 저러쿵......</span><br>
+            <span>이러쿵 저러쿵......</span><br>
+            <span>이러쿵 저러쿵......</span>
+        </div>
+    </div>
+    <div id="menu">
+        <span>Menu 1</span><br>
+        <span>Menu 2</span><br>
+        <span>Menu 3</span><br>
+        <span>Menu 4</span>
+    </div>
+    <div id="copyright"><em>Copyright</em>&copy; <ins>네박사</ins> All rights revered <address>whddhks2204@naver.com</address> <time>2022-08-07</time></div>
+</body>
+</html>

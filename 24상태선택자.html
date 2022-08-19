@@ -1,0 +1,64 @@
+<!-- 24상태선택자.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>24상태선택자.html</title>
+    <style>
+        body{
+            font-size: 1.2em;
+            font-family: sans-serif;
+            padding : 1em; 
+        }
+        /*상태 선택자   태그명:특성{ }*/
+        /*처음링크: 방문전*/
+        a:link{
+            text-decoration : none;
+            color: red;
+        }
+        /*방문후*/
+        a:visited{
+            color:blue;
+        }
+        /*마우스클릭시*/
+        a:active{
+            background-color: cornflowerblue;
+        }
+        /*마우스 오버시*/
+        a:hover{
+            color:indianred;
+            font-size: 1.5em;
+            cursor: wait;
+        }
+        /* 클래스가 google인 a요소를 선택해서 배경색을 lime으로 주세요 */
+        a.google{
+            background-color: lime;
+        }
+        /*클래스가 google이 아닌 요소a 를 선택해서 배경색을 다른색 주기
+            요소:not(배제할 요소)*/
+        a:not(a.google){
+            background-color: aqua;
+        }
+        button:disabled{
+            background-color: darkgray;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>상태선택자-하이퍼링크 스타일</h1>
+    <a href="http://www.naver.com">네이버</a><p></p>
+    <a class="google" href="http://www.google.com">구글</a><p></p>
+    <a href="http://www.daum.net">다음</a><p></p>
+    <a href="http://www.nate.com">네이트</a><p></p>
+    <a href="http://www.yahoo.com">야후</a><p></p>
+
+    일반 텍스트
+    <div>헤드라인 텍스트</div>
+    <button>활성화버튼</button>
+    <button disabled>비활성화버튼</button>
+
+</body>
+</html>
